@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TIỀN</title>
+</head>
+<body>
+   <table>
+   <tr>
+   <th><b><label for="Amount">Amount</label></b><br>
+      <input type="text" name="amount" size="10px" id="Amount"/>
+   </th>
+   <th><b>From Currency</b><br>
+      <select id="from" style="width: 100px">
+       <option value="VietNam">VietNam</option>
+       <option value="USD">USD</option>
+      </select>
+   </th>
+   <th><b>To Currency</b> <br>
+      <select id="to" style="width: 100px">
+      <option value="USD">USD</option>
+      <option value="VietNam">VietNam</option>
+      </select>
+   </th>
+   <th> <br>
+      <button style="background: cadetblue" type="button" onclick="kq()">Convert</button>
+   </th>
+   </tr>
+   </table>
+   <p id="Result"></p>
+</body>
+<script>
+function kq() {
+   var Amount = document.getElementById("Amount").value;
+   var From = document.getElementById("from").value;
+   var To = document.getElementById("to").value;
+   var Result;
+
+   if (From == "USD" && To == "VietNam") {
+      Result = "Result: " + (Amount * 2300) + " VND";
+   } else if (From == "VietNam" && To == "USD") {
+      Result = "Result: " + (Amount / 2300) + " $";
+   } else if (From == "VietNam") {
+      Result = "Result: " + Amount + " Đ"
+   } else {
+      Result = "Result: " + Amount + " $"
+   }
+   document.getElementById("Result").innerHTML = Result;
+}
+
+</script>
+</html>

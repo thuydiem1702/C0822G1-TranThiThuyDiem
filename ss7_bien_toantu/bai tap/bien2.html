@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BIẾN 2</title>
+</head>
+<body>
+    <button type="button" onclick="chuyendoF();">CHUYỂN ĐỘ</button>
+    <p id="demo"></p>
+    <script>
+        function chuyendoF() {
+             var C = parseInt(prompt("Nhập giá trị độ OC"))
+             var chuyendoF = 9*C/5+32 ;
+             document.getElementById("demo").innerHTML=("ĐỘ F LÀ " +chuyendoF)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BIẾN 1</title>
+</head>
+<body>
+    <button type="button" onclick="diemtb();">ĐIỂM TRUNG BÌNH</button><br>
+    <button type="button" onclick="tong();">ĐIỂM TỔNG</button>
+    <p id= demo></p>
+    <script>
+        function diemtb() {
+            var a = parseInt(prompt("Nhập điểm Vật lý"));
+            var b = parseInt(prompt("Nhập điểm Hoá học"));
+            var c = parseInt(prompt("Nhập điểm Sinh học"));
+            var diemtb = (a+b+c)/3 ;
+            document.getElementById("demo").innerHTML=("Điểm trung bình là " +diemtb);
+        }
+        function tong() {
+            var a = parseInt(prompt("Nhập điểm Vật lý"));
+            var b = parseInt(prompt("Nhập điểm Hoá học"));
+            var c = parseInt(prompt("Nhập điểm Sinh học"));
+            var tong = a+b+c ;
+            document.getElementById("demo").innerHTML=("Điểm tổng là " +tong);
+        }
+    </script>
+</body>
+</html>

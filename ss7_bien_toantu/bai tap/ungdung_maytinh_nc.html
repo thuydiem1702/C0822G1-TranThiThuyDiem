@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MÁY TÍNH NC</title>
+</head>
+<body>
+<p><b>Caculator</b></p>
+<div>
+    <input type="number" id="so1"/>
+    <input type="number" id="so2"/>
+</div>
+<br>
+<button type="button" onclick="phepTinh('+')">Addition(+)</button>
+<button type="button" onclick="phepTinh('-')">Subtraction(-)</button>
+<button type="button" onclick="phepTinh('*')">Multiplication(X)</button>
+<button type="button" onclick="phepTinh('/')">Division(/)</button>
+<p id="demo"></p>
+</body>
+<script>
+    function phepTinh(pt) {
+        let ketqua = 0;
+        let so1 = +(document.getElementById("so1").value);
+        let so2 = +(document.getElementById("so2").value);
+        if (pt == "+") {
+            let ketqua = so1 + so2;
+            document.getElementById("demo").innerHTML = ("Result  : " + ketqua);
+        } else if (pt == "-") {
+            let ketqua = so1 - so2;
+            document.getElementById("demo").innerHTML = ("Result  : " + ketqua);
+        } else if (pt == "*") {
+            let ketqua = so1 * so2;
+            document.getElementById("demo").innerHTML = ("Result  : " + ketqua);
+        } else {
+            let ketqua = so1 / so2;
+            document.getElementById("demo").innerHTML = ("Result  : " + ketqua);
+        }
+    }
+</script>
+</html>
