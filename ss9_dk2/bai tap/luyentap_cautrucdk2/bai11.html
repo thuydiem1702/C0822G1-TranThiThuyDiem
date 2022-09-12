@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế</title>
+</head>
+<body>
+<script>
+    let thuNhap = +prompt("Tổng thu nhập tính thuế")
+    if (thuNhap < 20) {
+        thue = thuNhap * 5 / 100;
+        alert('Thuế thu nhập cá nhân là  ' + thue);
+    } else if (thuNhap >= 20 && thuNhap < 50) {
+        thue = thuNhap * 10 / 100;
+        alert('Thuế thu nhập cá nhân là  ' + thue);
+    } else {
+        thue = thuNhap * 15 / 100;
+        alert('Thuế thu nhập cá nhân là  ' + thue);
+    }
+</script>
+</body>
+</html>

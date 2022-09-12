@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAY TINH</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4"><input type="text" id="window" size="30"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="nhap(1);" value="1"></td>
+        <td><input type="button" onclick="nhap(2)" value="2"></td>
+        <td><input type="button" onclick="nhap(3)" value="3"></td>
+        <td><input type="button" onclick="cong()" value="+"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="nhap(4)" value="4"></td>
+        <td><input type="button" onclick="nhap(5)" value="5"></td>
+        <td><input type="button" onclick="nhap(6)" value="6"></td>
+        <td><input type="button" onclick="tru()" value="-"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="nhap(7)" value="7"></td>
+        <td><input type="button" onclick="nhap(8)" value="8"></td>
+        <td><input type="button" onclick="nhap(9)" value="9"></td>
+        <td><input type="button" onclick="nhan()" value="*"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="xoa()" value="C"></td>
+        <td><input type="button" onclick="khong()" value="0"></td>
+        <td><input type="button" onclick="bang()" value="="></td>
+        <td><input type="button" onclick="chia()" value="/"></td>
+    </tr>
+</table>
+<script>
+    function nhap(so) {
+        document.getElementById("window").value += so;
+    }
+
+    function cong() {
+        let str = document.getElementById("window").value;
+        document.getElementById("window").value = str + "+";
+    }
+
+    function tru() {
+        let str = document.getElementById("window").value;
+        document.getElementById("window").value = str + "-";
+    }
+
+    function nhan() {
+        let str = document.getElementById("window").value;
+        document.getElementById("window").value = str + "*";
+    }
+
+    function chia() {
+        let str = document.getElementById("window").value;
+        document.getElementById("window").value = str + "/";
+    }
+
+    function khong() {
+        let str = document.getElementById("window").value;
+        document.getElementById("window").value = str + "0";
+    }
+
+    function bang() {
+        let str = document.getElementById("window").value;
+        let ketQua = eval(str);
+        document.getElementById("window").value = ketQua;
+    }
+
+    function xoa() {
+        document.getElementById("window").value = "";
+    }
+</script>
+</body>
+</html>

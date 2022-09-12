@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHI SO CAN NANG</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th><b><label for="cannang">Width(kg):</label></b><br>
+            <input type="text" name="cannang" size="10px" id="cannang"/>
+        </th>
+        <th><b><label for="chieucao">Heigth(m):</label></b><br>
+            <input type="text" name="chieucao" size="10px" id="chieucao"/>
+
+        <th><br>
+            <button style="background: cadetblue" type="button" onclick="kq()">Result :</button>
+        </th>
+    </tr>
+</table>
+<p id="result"></p>
+</body>
+<script>
+    function kq() {
+        let cannang = document.getElementById("cannang").value;
+        let chieucao = document.getElementById("chieucao").value;
+        let bmi = cannang / (chieucao ^ 2)
+        if (bmi < 18) {
+            document.getElementById("result").innerText= ("Underweight") ;
+        } else if (bmi < 25.0) {
+            document.getElementById("result").innerText =  ("Normal");
+        } else if (bmi < 30) {
+            document.getElementById("result").innerText =  ("Overweight");
+        } else {
+            document.getElementById("result").innerText =  ("Obese");
+        }
+    }
+</script>
+</html>

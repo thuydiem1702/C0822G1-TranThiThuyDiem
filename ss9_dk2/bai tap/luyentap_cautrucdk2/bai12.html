@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    let tien = +prompt("Số tiền vay");
+    let thang = +prompt("Số tháng vay");
+    let tienLai = 0 ;
+    for (let i = 1; i <= thang; i++) {
+        tienLai = tien*10/100 ;
+        tienMoi = tien + tienLai ;
+        tien = tienMoi;
+    }
+        alert('Lãi Ngân Hàng ' +tienLai) ;
+</script>
+</body>
+</html>
