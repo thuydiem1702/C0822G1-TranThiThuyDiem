@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhiêt độ</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập nhiệt độ hiện tại");
+    while (a <= 1000) {
+        if (a < 20) {
+            document.write("yêu cầu người dùng tăng nhiệt độ");
+            break;
+        } else if (a > 100) {
+            document.write(" yêu cầu người dùng giảm nhiệt độ");
+            break;
+        } else {
+            a = +prompt("Nhập lại");
+        }
+    }
+
+
+</script>
+</body>
+</html>
