@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chuỗi Fibonacci</title>
+    <title>in dãy fibonaci</title>
 </head>
 <body>
 <script>
     let n1 = 0;
     let n2 = 1;
     let n3 = n1 + n2;
-    for (let i = 0; i < 20; i++) {
+    let numBer = +prompt("Nhập số lượng muốn in ra")
+    for (let i = 0; i < numBer; i++) {
         if (i == 0 || i == 1) {
             document.write(i + "<br>");
         } else {

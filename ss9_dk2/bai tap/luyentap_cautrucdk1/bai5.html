@@ -9,17 +9,14 @@
     let a = parseFloat(prompt("Nhập điểm bài kiểm tra"));
     let b = parseFloat(prompt("Nhập điểm thi giữa kì"));
     let c = parseFloat(prompt("Nhập điểm thi cuối kì"));
-    let tb = (a + b*2 + c*3) / 6 ;
+    let tb = (a + b * 2 + c * 3) / 6;
     if (tb >= 8.0) {
         alert('GIỎI');
-    }
-    else if (tb < 8 && tb >= 6.5) {
+    } else if (tb < 8 && tb >= 6.5) {
         alert('KHÁ');
-    }
-    else if (tb < 6.5 && tb >= 5.0) {
+    } else if (tb < 6.5 && tb >= 5.0) {
         alert('TRUNG BÌNH');
-    }
-    else {
+    } else {
         alert('YẾU');
     }
 </script>

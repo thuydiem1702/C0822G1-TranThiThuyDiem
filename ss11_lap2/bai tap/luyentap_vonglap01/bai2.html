@@ -6,18 +6,16 @@
 </head>
 <body>
 <script>
-    let a = +prompt("Nhập nhiệt độ hiện tại");
-    while (a <= 1000) {
+    do {
+        a = +prompt("Nhập nhiệt độ hiện tại");
         if (a < 20) {
-            document.write("yêu cầu người dùng tăng nhiệt độ");
-            break;
+            alert("yêu cầu người dùng tăng nhiệt độ");
         } else if (a > 100) {
-            document.write(" yêu cầu người dùng giảm nhiệt độ");
-            break;
+            alert(" yêu cầu người dùng giảm nhiệt độ");
         } else {
-            a = +prompt("Nhập lại");
+            alert("XONG")
         }
-    }
+    } while (a < 20 || a > 100) ;
 
 
 </script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GAME</title>
+</head>
+<body>
+<button onclick="doanso()">Bắt đầu</button>
+<script>
+    function doanso() {
+        let number = +prompt("Số bạn muốn đoán là bao nhiêu?")
+        let number_ran = Math.floor(Math.random() * number);
+        let number_check = +prompt("Nhập số bạn đoán");
+        while (number_check !== number_ran) {
+            if (number_check < number_ran) {
+                alert("Số bạn đoán bé hơn");
+            } else {
+                alert("Số bạn đoán lớn hơn")
+            }
+            number_check = prompt("Nhập số bạn đoán");
+            if (number_check = number_ran) {
+               alert("Bạn đã đoán đúng số. Chúc mừng bạn!");
+            }
+        }
+    }
+</script>
+</body>
+</html>

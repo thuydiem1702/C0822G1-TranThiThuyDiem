@@ -9,18 +9,16 @@
     let a = +prompt("Nhập số a(a phải khác 0)");
     let b = +prompt("Nhập số b");
     let c = +prompt("Nhập số c");
-    let nghiem = b*b-4*a*c ;
-    if (nghiem=0){
-        x1 = x2 = -b/(2*a) ;
-        alert('phương trình có nghiệm kép  ' + x1) ;
-    }
-    else if (nghiem >0){
-        x1 = (-b+ Math.sqrt(nghiem))/(2*a) ;
-        x2 = (-b- Math.sqrt(nghiem))/(2*a) ;
-        alert('phương trình có 2 nghiệm là  ' + x1 + x2 ) ;
-    }
-    else {
-        alert('phương trình vô nghiệm')
+    let nghiem = b * b - 4 * a * c;
+    if (nghiem = 0) {
+        x1 = x2 = -b / (2 * a);
+        alert('phương trình có nghiệm kép  ' + x1);
+    } else if (nghiem > 0) {
+        x1 = (-b + Math.sqrt(nghiem)) / (2 * a);
+        x2 = (-b - Math.sqrt(nghiem)) / (2 * a);
+        alert('phương trình có 2 nghiệm là  ' + x1 + x2);
+    } else {
+        alert('phương trình vô nghiệm');
     }
 </script>
 </body>

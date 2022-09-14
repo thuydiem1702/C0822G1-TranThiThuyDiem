@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chuỗi Fibonacci</title>
+    <title>Chia hết cho 5</title>
 </head>
 <body>
 <script>
@@ -10,10 +10,10 @@
     let n2 = 1;
     let n3 = n1 + n2;
     for (let i = 0; i < 20; i++) {
-        if (i == 0 || i == 1) {
-            document.write(i + "<br>");
+        if (n3 % 5 == 0) {
+            document.write(n3);
+            break;
         } else {
-            document.write(n3 + " <br>");
             n1 = n2;
             n2 = n3;
             n3 = n1 + n2;
