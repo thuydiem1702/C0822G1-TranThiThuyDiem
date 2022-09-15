@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TỪ ĐIỂN</title>
+</head>
+<body>
+NHẬP TỪ :
+<input type="text" name="" id="string">
+<button onclick="transcript()">Dịch</button>
+<p id="result"></p>
+</body>
+<script>
+    function transcript() {
+        let english = ["hi", "apple", "banana", "yellow", "black"]
+        let vietnamese = ["xin chào", "táo", "chuối", "vàng", "đen"]
+        let string = document.getElementById("string").value;
+        let index = 0;
+        for (let i = 0; i < english.length; i++) {
+            if (string == english[i]) {
+                index = i;
+                for (let j = 0; j < vietnamese.length; j++) {
+                    if (index == j) {
+                        result = vietnamese[j];
+                    }
+                }
+            } else if (string == vietnamese[i]) {
+                index = i;
+                for (let j = 0; j < english.length; j++) {
+                    if (index == j) {
+                        result = english[j];
+                    }
+                }
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</html>
