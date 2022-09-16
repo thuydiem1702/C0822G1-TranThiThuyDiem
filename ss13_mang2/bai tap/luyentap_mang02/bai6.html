@@ -11,12 +11,12 @@
     for (let i = 0; i < size; i++) {
         array[i] = prompt("Nhập phần tử vị trí thứ " + (i + 1));
     }
-    for (let i=0 ;i< array.length;i++){
-        if (array[i]=="-"){
-            array.splice(i,1,"_");
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == "-") {
+            array.splice(i, 1, "_");
         }
     }
-    document.write(array.join(''))
+    document.write(array.join(''));
 </script>
 </body>
 </html>
