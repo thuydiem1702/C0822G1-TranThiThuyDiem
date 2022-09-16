@@ -8,13 +8,20 @@
 <script>
     let soNguyen = [2, 4, 5, 6, 7, 8, 9, 12, 14, 15];
     let max = soNguyen[0];
-    let sum=0;
-    for (let i = 0; i <= soNguyen.length; i++) {
+    let viTri = [0];
+    let sum = 0;
+    let tb = 0;
+    for (let i = 0; i < soNguyen.length; i++) {
+        sum += soNguyen[i];
+        tb = sum / soNguyen.length;
         if (soNguyen[i] > max) {
             max = soNguyen[i];
-        } sum+=i;
+            viTri = [i];
+
+        }
     }
-    document.write();
+    document.write("PHẦN TỬ CÓ GIÁ TRỊ LỚN NHẤT: " + max + ",VỊ TRÍ SỐ: " + viTri);
+    document.write("Trung bình : " + tb);
 </script>
 </body>
 </html>

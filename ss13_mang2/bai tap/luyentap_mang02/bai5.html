@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 Chuỗi</title>
+</head>
+<body>
+<script>
+    let size1 = +prompt("Nhập độ dài mảng1: ");
+    let array1 = [];
+    for (let i = 0; i < size1; i++) {
+        array1[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+    let size2 = +prompt("Nhập độ dài mảng2: ");
+    let array2 = [];
+    for (let j = 0; j < size2; j++) {
+        array2[j] = +prompt("Nhập phần tử vị trí thứ " + (j + 1));
+    }
+    let sum = 0;
+    for (let i = 0; i < array1.length; i++) {
+        for (let j = 0; j < array2.length; j++) {
+            if (i == j && array1.length == array2.length) {
+                sum++;
+            }
+        }
+    }
+    if (sum == array1.length) {
+        document.write("2 chuỗi giống nhau");
+    } else {
+        document.write("2 chuỗi khác nhau");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sắp xếp</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập vào 10 số : ");
+    let arrStr = str.split("");
+
+    for (let i = 0; i < arrStr.length - 1; i++) {
+        for (let j = i + 1; j < arrStr.length; j++) {
+            if (arrStr[j] > arrStr[i]) {
+                let first = arrStr[i]
+                arrStr[i] = arrStr[j];
+                arrStr[j] = first;
+            }
+        }
+    }
+    document.write(arrStr);
+</script>
+</body>
+</html>

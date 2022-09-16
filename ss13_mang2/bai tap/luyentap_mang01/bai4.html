@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập mảng</title>
+</head>
+<body>
+<script>
+    let size = +prompt("Nhập độ dài mảng: ");
+    let array = [];
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+    document.write("<hr>");
+    for (let i = array.length - 1; i >= 0; i--) {
+        document.write(array[i]);
+    }
+</script>
+</body>
+</html>

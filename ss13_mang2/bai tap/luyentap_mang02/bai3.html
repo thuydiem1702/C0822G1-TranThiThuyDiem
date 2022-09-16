@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số</title>
+</head>
+<body>
+<script>
+    let size = +prompt("Nhập độ dài mảng: ");
+    let array = [];
+    let sum=0 ;
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+    for (let i=0 ;i< array.length;i++){
+        if (!isNaN(array[i])){
+            sum++;
+        }
+    }
+    document.write(sum);
+</script>
+</body>
+</html>
