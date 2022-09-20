@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 số nguyên</title>
+</head>
+<body>
+<script>
+    let num1 = +prompt("Nhập số thứ nhất");
+    let num2 = +prompt("Nhập số thứ hai");
+    let num3 = +prompt("Nhập số thứ ba");
+
+    function check() {
+        if (num1 < num2 && num1 < num3) {
+            return "a là số nhỏ nhất";
+        } else if (num2 < num3) {
+            return "b là số nhỏ nhất";
+        } else {
+            return "c là số nhỏ nhất";
+        }
+    }
+
+    alert(check());
+</script>
+</body>
+</html>

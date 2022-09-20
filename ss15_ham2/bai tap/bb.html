@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data</title>
+</head>
+<body>
+<script>
+    let dateString = prompt("Nhập vào chuỗi");
+
+    function checkDate(dateString) {
+        let parts = dateString.split("/");
+        let day = parseInt(parts[0]);
+        let month = parseInt(parts[1]);
+        let year = parseInt(parts[2]);
+        // if (parts !== day/month/year){
+        // return false;
+        // }
+        if (day > 31 || day == 0) {
+            return false;
+        } else if (month > 12 || day == 0) {
+            return false;
+        } else if (year < 10000) {
+            return true;
+        }
+    }
+
+    alert(checkDate(dateString));
+</script>
+</body>
+</html>

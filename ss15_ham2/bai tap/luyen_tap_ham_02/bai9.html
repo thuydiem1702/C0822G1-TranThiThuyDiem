@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KÝ TỰ</title>
+</head>
+<body>
+<script>
+    let size = prompt("Nhập độ dài mảng: ");
+    let array = [];
+    for (let i = 0; i < size; i++) {
+        array[i] = prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+    let num = prompt("Nhập ký tự cần tìm");
+    let sum = 0;
+    let result;
+
+    function check() {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == num) {
+                result = (sum += 1);
+            } else {
+                result = "-1";
+            }
+        }
+        return result;
+    }
+
+    alert(check());
+</script>
+</body>
+</html>

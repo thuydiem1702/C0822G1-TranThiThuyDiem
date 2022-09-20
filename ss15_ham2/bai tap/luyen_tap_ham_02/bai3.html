@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai thừa</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số bất kỳ");
+    let n = 1;
+
+    function check() {
+        for (let i = 1; i <= a; i++) {
+            n = n * i;
+        }
+        return n;
+    }
+
+    document.write(check());
+</script>
+</body>
+</html>

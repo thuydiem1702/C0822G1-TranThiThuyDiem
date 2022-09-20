@@ -6,18 +6,15 @@
 </head>
 <body>
 <script>
-    let size = +prompt("Nhập độ dài mảng: ");
-    let array = [];
-    let sum = 0;
-    for (let i = 0; i < size; i++) {
-        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
-    }
-    for (let i = 0; i < array.length; i++) {
-        if (isNaN(array[i])) {
-            sum++;
+    let array = prompt("Nhập vào mảng");
+    let newArray = array.split(" ");
+    let count = 0;
+    for (let i = 0; i < newArray.length; i++) {
+        if (newArray[i] !== "") {
+            count++;
         }
     }
-    document.write(sum);
+    alert(count);
 </script>
 </body>
 </html>

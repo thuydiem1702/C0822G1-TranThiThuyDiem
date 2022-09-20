@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo MẢng</title>
+</head>
+<body>
+<script>
+    let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let star = prompt("Nhập tên ngôi sao cần tìm");
+
+    function check(star) {
+        let result = " ";
+        for (let i = 0; i < star1.length; i++) {
+            if (star == star1[i]) {
+                result = star2[i];
+                return result;
+            } else {
+                result = "Không tìm thấy";
+            }
+        }
+        return result;
+    }
+
+    alert(check(star));
+</script>
+</body>
+</html>
