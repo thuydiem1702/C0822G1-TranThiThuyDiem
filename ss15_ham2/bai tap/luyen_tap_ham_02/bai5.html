@@ -10,10 +10,10 @@
     let num2 = +prompt("Nhập số thứ hai");
     let num3 = +prompt("Nhập số thứ ba");
 
-    function check() {
-        if (num1 < num2 && num1 < num3) {
+    function check(a,b,c) {
+        if (a < b && a < c) {
             return "a là số nhỏ nhất";
-        } else if (num2 < num3) {
+        } else if (b < c) {
             return "b là số nhỏ nhất";
         } else {
             return "c là số nhỏ nhất";
