@@ -7,21 +7,20 @@
 <body>
 <script>
     let a = +prompt("Nhập bán kính hình tròn");
-    let total;
 
     function dienTich() {
-        total = a * 2 * 3.14;
+        let total = a * 2 * 3.14;
         return total;
     }
 
     alert("Diện tích hình tròn: " + dienTich());
 
     function chuVi() {
-        total = a * a * 3.14;
+        let total = a * a * 3.14;
         return total;
     }
 
-    alert("Chu vi hình tròn: " + chuVi());
+    alert("Chu vi hình tròn: " + chuVi(a));
 </script>
 </body>
 </html>

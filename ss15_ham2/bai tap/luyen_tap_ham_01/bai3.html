@@ -6,9 +6,9 @@
 </head>
 <body>
 <script>
-    function addNumber() {
-        let a = +prompt("Nhập số thứ nhất");
-        let b = +prompt("Nhập số thứ hai");
+    let a = +prompt("Nhập số thứ nhất");
+    let b = +prompt("Nhập số thứ hai");
+    function addNumber(num) {
         if (a > b) {
             return "Số thứ nhất lớn hơn số thứ hai";
         } else {
@@ -16,7 +16,7 @@
         }
     }
 
-    alert(addNumber());
+    alert(addNumber(a,b));
 </script>
 </body>
 </html>
