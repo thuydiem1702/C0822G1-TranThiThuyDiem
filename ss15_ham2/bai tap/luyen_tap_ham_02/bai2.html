@@ -6,17 +6,16 @@
 </head>
 <body>
 <script>
-    let a = +prompt("Nhập bán kính hình tròn");
-
-    function dienTich() {
-        let total = a * 2 * 3.14;
+    let a = +prompt("Nhập bán kính hình tròn");;
+    function dienTich(num) {
+        let total = num * 2 * 3.14;
         return total;
     }
 
     alert("Diện tích hình tròn: " + dienTich());
 
-    function chuVi() {
-        let total = a * a * 3.14;
+    function chuVi(num) {
+        let total = num * num * 3.14;
         return total;
     }
 
