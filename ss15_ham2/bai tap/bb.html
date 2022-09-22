@@ -6,26 +6,50 @@
 </head>
 <body>
 <script>
-    let dateString = prompt("Nhập vào chuỗi");
+    // let dateString = prompt("Nhập vào chuỗi");
+    //
+    // function checkDate(dateString) {
+    //     let parts = dateString.split("/");
+    //     let day = parseInt(parts[0]);
+    //     let month = parseInt(parts[1]);
+    //     let year = parseInt(parts[2]);
+    //     // if (parts !== day/month/year){
+    //     // return false;
+    //     // }
+    //     if (day > 31 || day == 0) {
+    //         return false;
+    //     } else if (month > 12 || day == 0) {
+    //         return false;
+    //     } else if (year < 10000) {
+    //         return true;
+    //     }
+    // }
 
-    function checkDate(dateString) {
-        let parts = dateString.split("/");
-        let day = parseInt(parts[0]);
-        let month = parseInt(parts[1]);
-        let year = parseInt(parts[2]);
-        // if (parts !== day/month/year){
-        // return false;
-        // }
-        if (day > 31 || day == 0) {
-            return false;
-        } else if (month > 12 || day == 0) {
-            return false;
-        } else if (year < 10000) {
-            return true;
+    // alert(checkDate(dateString));
+    // let num = +prompt("Nhập số phần tử trong mảng");
+    // let arrA = [];
+    // for (let i = 0; i < num; i++) {
+    //     arrA[i] = +prompt("Số thứ tự là :" + (i + 1));
+    // }
+    //
+    function checkarr(arr) {
+        for (let i = 0; i < arr.length; i += 2) {
+            if (arr[i] > arr[i + 1]) {
+                if (arr[i + 1] < arr[i + 2]) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else if (arr[i + 1] > arr[i + 2]) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 
-    alert(checkDate(dateString));
+    alert(checkarr(arrA));
+
 </script>
 </body>
 </html>
