@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CÔNG TẮC VÀ BÓNG ĐÈN</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    class BongDen {
+        constructor(bongDen) {
+            this.trangThai = false;
+        }
+
+        gettrangThai() {
+            return this.trangThai;
+        }
+
+        denSang() {
+            this.trangThai = "Đèn sáng";
+        }
+
+        denTat() {
+            this.trangThai = "Đèn tắt";
+        }
+    }
+
+    class CongTac {
+        constructor(congTac) {
+            this.trangThaiCongTac = false;
+            this.BongDen = null;
+        }
+        noiBongDen(bongDen) {
+            this.BongDen = bongDen;
+        }
+
+        congTacMo() {
+            this.trangThaiCongTac = true;
+            this.BongDen.denSang();
+        }
+
+        conTacDong() {
+            this.trangThaiCongTac = false;
+            this.BongDen.denTat();
+        }
+    }
+    let BongDen1 = new BongDen();
+    let CongTac1 = new CongTac();
+    CongTac1.noiBongDen(BongDen1);
+    CongTac1.congTacMo();
+    for (let i = 0; i < 10; i++) {
+        CongTac1.congTacMo();
+        document.write("Công tắc bật đèn: " + BongDen1.gettrangThai() + "<br>");
+        CongTac1.conTacDong();
+        document.write("Công tắc tắt đèn : " + BongDen1.gettrangThai() + "<br>");
+    }
+</script>
+</body>
+</html>
