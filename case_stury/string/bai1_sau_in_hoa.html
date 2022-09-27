@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let str = prompt("Nhap vao 1 chuoi:").toLowerCase();
+    // let arr = str.split(" ");
+    // for (let i = 0; i < arr.length; i++) {
+    //     arr[i].trim();
+    //     document.write(arr[i].charAt(0).toUpperCase());
+    //     for (let j = 1; j < arr[i].length; j++) {
+    //         document.write(arr[i].charAt(j));
+    //     }
+    //     document.write(" ");
+
+    //     let max = arr[0].length;
+    //     for (let i = 1; i < arr.length; i++) {
+    //         if (arr[i].length > max) {
+    //             max = arr[i].length;
+    //         }
+    //         document.write(max);
+    //     }
+    //
+    // }
+
+    let string = prompt("nhập").toLowerCase();
+    let arr = string.split(" ");
+    let arrNew = "";
+    for (let i = 0; i < arr.length; i++) {
+        let first = arr[i].substr(0, 1)
+        let result = first.toUpperCase() + arr[i].substr(1)
+        arrNew += result + " ";
+    }
+    document.write(arrNew);
+    let max= arr[0].length;
+    let index;
+    for (let i = 1; i <arr.length ; i++) {
+        if (arr[i].length>max){
+            max= arr[i].length;
+            index = i;
+        }
+    } document.write(max + " là " + arr[index]);
+</script>
+</body>
+</html>

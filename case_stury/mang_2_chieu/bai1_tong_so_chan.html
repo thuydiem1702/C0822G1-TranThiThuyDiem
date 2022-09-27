@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng số chẵn</title>
+</head>
+<body>
+<script>
+    let m = +prompt("Nhập kích thước m : ");
+    let n = +prompt("Nhập kích thước n : ");
+    let size = m*n;
+    let array = [];
+    let sum=0;
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+    for (let i=0;i<array.length;i++){
+        if (array[i]%2==0){
+            sum+=array[i];
+        }
+    }
+    document.write(sum);
+</script>
+</body>
+</html>

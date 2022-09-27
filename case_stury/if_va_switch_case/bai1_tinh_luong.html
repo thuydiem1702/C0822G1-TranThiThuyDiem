@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍNH LƯƠNG</title>
+</head>
+<body>
+<script>
+    let luong = +prompt("NHẬP LƯƠNG NHÂN VIÊN");
+    let thue;
+    if (luong < 7) {
+        thue = luong / 100 * 5;
+    } else if (luong > 7 && luong < 15) {
+        thue = luong / 100 * 10;
+    } else {
+        thue = luong / 100 * 15;
+    }
+    let luongRong = luong - thue;
+    alert("THUẾ: " + thue + "LƯƠNG: " + luongRong);
+</script>
+</body>
+</html>

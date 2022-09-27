@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập một số từ bàn phím và in ra màn hình bằng chữ</title>
+</head>
+<body>
+<script>
+    // let numBer = +prompt("Nhập số");
+    // let so = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    // let chu = ["không","một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    // let newChu =[];
+    // for (let i = 0; i < so.length; i++) {
+    //     // for (let j = i; j < chu.length; j++) {
+    //         if (numBer == so[i]) {
+    //             newChu.push(chu[j]);
+    //         }
+    //     //}
+    // }alert(newChu);
+    let numBer = prompt("Nhập số");
+    numBer.split("");
+    let array=[];
+    let chu = ["không","một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    for (let i=0;i<numBer.length;i++){
+        array.push(chu[numBer[i]]);
+    }
+    document.write(array);
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TẠO MENU</title>
+</head>
+<!--<button type="button" onclick="menu();">XIN CHÀO</button>-->
+<script>
+    // function menu() {
+    let chon = +prompt("MENU\n1. Cafe\n2. Cam vat\n3. Nuoc ep ca rot\n4. Nuoc em ca chua\n5. Nuoc dua\n6. " +
+        "Nuoc loc\n7. Thoat\n Vui long chon mon:");
+    switch (chon) {
+        case 1:
+            alert("Cậu đã chọn Cafe  với giá 20k 1 ly ạ");
+            let so1 = +prompt("Nhập số lượng ");
+            alert("Tổng số tiền bạn cần thanh toán " + so1 * 20 + "k");
+            break;
+        case 2:
+            alert("Cậu đã chọn Cam vắt với giá 25k 1 ly ạ");
+            let so2 = +prompt("Nhập số lượng ");
+            alert("Tổng số tiền bạn cần thanh toán " + so2 * 25 + "k");
+            break;
+        case 3:
+            alert("Cậu đã chọn Nước ép cà rốt với giá 30k 1 ly ạ");
+            let so3 = +prompt("Nhập số lượng ");
+            alert("Tổng số tiền bạn cần thanh toán " + so3 * 30 + "k");
+            break;
+        case 4:
+            alert("Cậu đã chọn Nước ép cà chua với giá 30k 1 ly ạ");
+            let so4 = +prompt("Nhập số lượng ");
+            alert("Tổng số tiền bạn cần thanh toán " + so4 * 30 + "k");
+            break;
+        case 5:
+            alert("Cậu đã chọn Nước lọc với giá 10k 1 chai ạ");
+            let so5 = +prompt("Nhập số lượng ");
+            alert("Tổng số tiền bạn cần thanh toán " + so5 * 10 + "k");
+            break;
+        case 6:
+            alert("Cậu đã chọn Nước dừa với giá 30k ạ");
+            let so6 = +prompt("Nhập số lượng ");
+            alert("Tổng số tiền bạn cần thanh toán " + so6 * 30 + "k");
+            break;
+        default :
+            alert("Menu của tớ chỉ có từ 1-6 thôi :))) Nhập lại đi ^^");
+            break;
+    }
+    while (so != 7) ;
+    //}
+
+    // let mon = ["cafe", "cam vat", "nuoc ep ca rot", "nuoc ep ca chua", "nuoc dua", "nuoc loc"];
+    // let gia = [20000, 30000, 30000, 30000, 20000, 5000];
+    // let chon;
+    // let soLuong;
+    // let tong = 0;
+    // do {
+    //     chon = +prompt("MENU\n1. Cafe\n2. Cam vat\n3. Nuoc ep ca rot\n4. Nuoc em ca chua\n5. Nuoc dua\n6. " +
+    //         "Nuoc loc\n7. Thoat\n Vui long chon mon:");
+    //     if (chon === 7) {
+    //         alert("Cam on quy khach");
+    //     } else {
+    //         for (let i = 0; i < mon.length; i++) {
+    //             if (chon === i + 1) {
+    //                 alert(mon[i] + ": " + gia[i] + "(VND)");
+    //                 do {
+    //                     soLuong = prompt("Vui long nhap so luong: ");
+    //                 } while (!(soLuong % 1 === 0 && soLuong > 0));
+    //                 alert(mon[i] + " x " + soLuong + " = " + gia[i] * soLuong + "(VND)");
+    //                 tong += gia[i] * soLuong;
+    //             }
+    //         }
+    //         alert("Vui long nhap lai");
+    //     }
+    // } while (chon !== 7);
+    //
+    // document.write("Tong so tien phai thanh toan la: " + tong + "(VND)");
+</script>
+</body>
+</html>

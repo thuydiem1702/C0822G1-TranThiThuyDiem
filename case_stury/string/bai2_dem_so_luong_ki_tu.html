@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So ki tu khac nhau trong chuoi</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhap vao 1 chuoi ki tu:");
+    let arr = [str.charAt(0)];
+
+    for (let i = 1; i < str.length; i++) {
+        if (!arr.includes(str.charAt(i))) {
+            arr.push(str.charAt(i));
+        }
+    }
+    document.write("So ki tu khac nhau trong chuoi la: "+arr.length);
+</script>
+</body>
+</html>
