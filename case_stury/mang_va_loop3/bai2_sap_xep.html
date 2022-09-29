@@ -6,17 +6,26 @@
 </head>
 <body>
 <script>
-    let a =[7,2,5,3,5,3];
-    let b =[7,2,5,4,6,3,5,3];
-    //let array=[];
-    for (let i=0;i<b.length;i++){
-        for (let j=0;j<a.length;j++){
-            if (a[j]==b[i]){
-              // array.push(i);
-               b.splice(i,1);
-            }
+    // let a =[7,2,5,3,5,3];
+    // let b =[7,2,5,4,6,3,5,3,9,9];
+    // //let array=[];
+    // for (let i=0;i<b.length;i++){
+    //     for (let j=0;j<a.length;j++){
+    //         if (a[j]==b[i] ){
+    //          // array.push(i);
+    //            b.splice(i,1);
+    //         }
+    //     }
+    // }alert(b);
+    let arrA = [7, 2, 5, 3, 5, 3];
+    let arrB = [7, 2, 5, 4, 6, 3, 5, 3,4,9,9];
+    let result = [];
+    for (let i = 0; i < arrB.length; i++) {
+        if (!arrA.includes(arrB[i]) && !result.includes(arrB[i])) {
+            result.push(arrB[i]);
         }
-    }alert(b);
+    }
+    document.write(result);
 </script>
 </body>
 </html>
