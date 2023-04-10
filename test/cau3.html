@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quản lí sách</title>
+</head>
+<body>
+<p><b>QUẢN LÍ SÁCH</b></p>
+<!--<input type="text" id="add" placeholder="Nhập tên sách đã có"><br>-->
+<!--<button onclick="addNew()">Thêm sách đã có</button><br>-->
+<input type="text" id="i" placeholder="nhập tên sách"><br>
+<button onclick="addNewBook()">Thêm sách mới</button> <br>
+<input type="text" id="mbook" placeholder="nhập tên sách"><br>
+<button onclick="addMBook()">Mượn sách</button> <br>
+<input type="text" id="books" placeholder="nhập tên sách"><br>
+<button onclick="addBooks()">Hiển thị sách nhiều nhất</button> <br>
+
+<input type="text" id="id" placeholder="nhập id"><br>
+<input type="text" id="name" placeholder="nhập tên sách"><br>
+<input type="text" id="year" placeholder="nhập năm xuất bản"><br>
+<input type="text" id="num" placeholder="nhập số quyển"><br>
+<input type="text" id="boo" placeholder="nhập tình trạng"><br>
+<button onclick="addNewBook()">Thêm sách mới</button> <br>
+<input type="text" id="add" placeholder="Nhập tên sách đã có"><br>
+<button onclick="addNew()">Thêm sách đã có</button>
+
+<p id="display"></p>
+<script>
+    class Book {
+        constructor(id, name, year, num, boo) {
+            this.id = id;
+            this.name = name;
+            this.year = year;
+            this.num = num;
+            this.boo = boo;
+        }
+
+        setId(id) {
+            this.id = id;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        setYear(year) {
+            this.year = year;
+        }
+
+        setNum(num) {
+            this.num = num;
+        }
+
+        setBoo(boo) {
+            this.boo = boo;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getYear() {
+            return this.year;
+        }
+
+        getNum() {
+            return this.num;
+        }
+
+        getBoo() {
+            return this.boo;
+        }
+    }
+
+    let bookList = [];
+    let book1 = new Book(12345, "Toán", 2000, 3, true);
+    let book2 = new Book(23456, "Văn", 1998, 4, true);
+    let book3 = new Book(37456, "Tiếng Anh", 1999, 5, false);
+    bookList.push(book1, book2, book3);
+    display(bookList);
+
+    function addNew() {
+        let id = document.getElementById("id").value;
+        let name = document.getElementById("name").value;
+        let year = document.getElementById("year").value;
+        let num = document.getElementById("num").value;
+        let boo = document.getElementById("boo").value;
+        let book = new Book(id, name, year, num, boo);
+        bookList.push(book);
+        document.getElementById("id").value = "";
+        document.getElementById("name").value = "";
+        document.getElementById("year").value = "";
+        document.getElementById("num").value = "";
+        document.getElementById("boo").value = "";
+        display(bookList);
+    }
+
+    function addNewBook() {
+        let id = document.getElementById("id").value;
+        let name = document.getElementById("name").value;
+        let year = document.getElementById("year").value;
+        let num = document.getElementById("num").value;
+        let boo = document.getElementById("boo").value;
+        let book = new Book(id, name, year, num, boo);
+        bookList.push(book);
+        document.getElementById("id").value = "";
+        document.getElementById("name").value = "";
+        document.getElementById("year").value = "";
+        document.getElementById("num").value = "";
+        document.getElementById("boo").value = "";
+        display(bookList);
+
+    }
+
+    function display(list) {
+        let data = '<table border="1" style="border-collapse: collapse">\n' +
+            '    <tr>\n' +
+            '        <th>Mã số sách</th>\n' +
+            '        <th>Tên sách</th>\n' +
+            '        <th>Năm xuất bản</th>\n' +
+            '        <th>Số quyển</th>\n' +
+            '        <th>Tình trạng</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < list.length; i++) {
+            data += ' <tr>\n' +
+                '        <td>' + list[i].getId() + '</td>\n' +
+                '        <td>' + list[i].getName() + '</td>\n' +
+                '        <td>' + list[i].getYear() + '</td>\n' +
+                '        <td>' + list[i].getNum() + '</td>\n' +
+                '        <td>' + list[i].getBoo() + '</td>\n' +
+                '    </tr>';
+        }
+        data += '</table>';
+        document.getElementById("display").innerHTML = data;
+    }
+</script>
+
+</body>
+</html>

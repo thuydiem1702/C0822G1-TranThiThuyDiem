@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số nguyên dương</title>
+</head>
+<body>
+<script>
+    function checkNum(a, b) {
+        // let num1 = a;
+        // let num2 = b;
+        let tong1 = 0;
+        let tong2 = 0;
+        for (let i = 1; i < a; i++) {
+            if (a % i == 0) {
+                tong1 += i;
+            }
+        }
+        for (let j = 1; j < b; j++) {
+            if (b % j == 0) {
+                tong2 += j;
+            }
+        }
+        if (tong1 == b || tong2 == a) {
+            return alert("True");
+        } else {
+            return alert("False");
+        }
+    }
+
+    let num1 = +prompt("Nhập số nguyên thứ nhất");
+    let num2 = +prompt("Nhập số nguyên thứ hai");
+    checkNum(num1, num2);
+</script>
+</body>
+</html>
