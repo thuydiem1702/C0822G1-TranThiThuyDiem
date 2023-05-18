@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4cecb60e-8a83-4515-8d27-3c9dceb37755" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/demo/bai1_so_chinh_phuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/bai2.2_uoc_cua_so_phia_truoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/bai2_so_nhi_phan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/bai3.3_mang_2chieu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/quan_li_san_pham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/text/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/text/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mang_2_chieu5/bai2_so_nguyen_to_mang_2_chieu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mang_2_chieu5/bai3_gtri_lon_nhat_nho_nhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/cau1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/cau2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/cau3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang_2_chieu5/bai1_tong_so_chan.html" beforeDir="false" afterPath="$PROJECT_DIR$/mang_2_chieu5/bai1_tong_so_chan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang_va_loop3/bai5_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/mang_va_loop3/bai5_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss15_ham2/bai tap/ung_dung_quan_li_san_pham.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss15_ham2/bai tap/ung_dung_quan_li_san_pham.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2L7RhTYY3VvcNXY0SQiN3do4Dg0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cecb60e-8a83-4515-8d27-3c9dceb37755" name="Default Changelist" comment="" />
+      <created>1675220253973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675220253973</updated>
+      <workItem from="1675220255200" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

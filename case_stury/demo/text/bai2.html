@@ -2,9 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>tam giác</title>
 </head>
 <body>
-$END$
+<script>
+    let num1 = +prompt("Nhập số thứ 1 ");
+    let num2 = +prompt("Nhập số thứ 2 ");
+    let num3 = +prompt("Nhập số thứ 3 ");
+
+    function checkTriangle(x, y, z) {
+        let max;
+        if (x > y && x > z) {
+            max = x;
+            if (max < y + z) {
+                if (max ^ 2 == (z ^ 2 + y ^ 2)) {
+                    return alert("Là ba cạnh của tam giác vuông");
+                } else {
+                    return alert("Chỉ là ba cạnh của tam giác");
+                }
+            } else {
+                return alert("Không phải là cạnh của 1 tam giác");
+            }
+        } else if (y > x && y > z) {
+            max = y;
+            if (max < x + z) {
+                if (max ^ 2 == (z ^ 2 + x ^ 2)) {
+                    return alert("Là ba cạnh của tam giác vuông");
+                } else {
+                    return alert("Chỉ là ba cạnh của tam giác");
+                }
+            } else {
+                return alert("Không phải là cạnh của 1 tam giác");
+            }
+        } else {
+            max = z;
+            if (max < x + y) {
+                if (max ^ 2 == (x ^ 2 + y ^ 2)) {
+                    return alert("Là ba cạnh của tam giác vuông");
+                } else {
+                    return alert("Chỉ là ba cạnh của tam giác");
+                }
+            } else {
+                return alert("Không phải là cạnh của 1 tam giác");
+            }
+        }
+    }
+
+    checkTriangle(num1, num2, num3);
+</script>
 </body>
 </html>

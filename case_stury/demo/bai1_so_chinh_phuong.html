@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    // let size = +prompt('nhập')
+    // let array = [];
+    // let sum=0
+    // for (let i = 2; i < size; i++) {
+    //     let cp = i*i ;
+    //     array.push(cp);
+    // }
+    // document.write(array + '<br>');
+    // for (let i=0;i <= array.length-1;i++){
+    //
+    //     sum=sum+array[i];
+    //
+    // }
+    // document.write(sum);
+    let size = +prompt("Nhập độ dài mảng: ");
+    let array = [];
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+    document.write(array +"<br>");
+    let sum=0;
+    for (let i=0;i < array.length;i++) {
+       if (Math.sqrt(array[i])%1 === 0){
+           sum=sum+array[i];
+       }
+    } document.write(sum);
+</script>
 </body>
 </html>

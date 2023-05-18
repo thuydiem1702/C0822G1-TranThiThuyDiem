@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    // Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều
+
+
+    let row = +prompt("Nhập số phần tử trong mảng 2 chiều: ");
+    let col;
+    let array2d = [];
+    for (let i = 0; i < row; i++) {
+        let array = [];
+        col = +prompt("Nhập số phần tử của array2d[" + i + "]: ");
+        for (let j = 0; j < col; j++) {
+            array[j] = +prompt("Nhập array2d[" + i + "][" + j + "]");
+        }
+        array2d[i] = array;
+    }
+
+    function findMaxMin(array) {
+        let max = array[0][0];
+        let min = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] > max) {
+                    max = array[i][j];
+                }
+                if (array[i][j] < min) {
+                    min = array[i][j];
+                }
+            }
+        }
+        return "max = " + max + " & min = " + min;
+    }
+
+    document.write(findMaxMin(array2d));
+</script>
 </body>
 </html>

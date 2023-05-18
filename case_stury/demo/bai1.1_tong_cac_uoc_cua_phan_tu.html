@@ -2,27 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ước</title>
+    <title>Tổng các ước của phần tử</title>
 </head>
 <body>
 <script>
     let size = +prompt("Nhập độ dài mảng: ");
     let array = [];
-    let arrayNew=[];
     for (let i = 0; i < size; i++) {
         array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
     }
     document.write(array + " <br> ");
-    for (let i = 0; i <array.length ; i++) {
-        if(array[i+1]%array[i]===0){
-            arrayNew.push(array[i]);
+    let arrayNew = [];
+    for (let i = 0; i < array.length; i++) {
+        let sum = 0;
+        for (let j = 1; j <= array[i]; j++) {
+            if (array[i] % j === 0) {
+                sum += j;
+            }
         }
-    } arrayNew.push(array[array.length-1])
-    if (arrayNew.length===array.length){
-        document.write("OK");
+        arrayNew.push(sum);
     }
-    else {
-        document.write("NO");}
+    document.write(arrayNew);
 </script>
 </body>
 </html>

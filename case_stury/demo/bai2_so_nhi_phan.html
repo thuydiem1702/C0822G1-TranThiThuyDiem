@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>số nhị phân</title>
 </head>
 <body>
-$END$
+<script>
+    // let num = +prompt("Nhập số: ");
+    // let np=(num >>> 0).toString(2);
+    // alert(np);
+
+    function changeBinary(number) {
+        let arr=[];
+        let num = number ;
+        while (!num%2===0){
+            let a=parseInt(num/2);
+            let b=num%2;
+            arr.push(b);
+            num=a;
+        } return arr.reverse().join("");
+    }
+    alert(changeBinary(+prompt("nhập số")));
+
+    // function changeBinary(number) {
+    //     let a = number;
+    //     let arr = [];
+    //     let i = 0
+    //     do {
+    //         arr[i] = a % 2;
+    //         a = parseInt(a/2);
+    //         i++
+    //     }
+    //     while (a !== 0);
+    //     return arr.reverse().join("")
+    // }
+    // alert(changeBinary(+prompt("Nhập số")));
+
+
+    // phương trình bậc 2: nghiệm = b2-4ac;
+    // nghiem<0 --> vô nghiệm
+    // nghiem=0 --> nghiệm kép -b/2a;
+    // nghiem>0 --> 2 nghiem -b +- căn nghiem / 2a
+    // nếu a+b+c= 0; nghiem =1 và nghiem = c/a
+    // nếu a-b+c= 0; nghiem =-1 và nghiem = -c/a
+
+    // Xét phương trình ax + b = 0
+    //
+    // Nếu a = 0 và b = 0: phương trình có vô số nghiệm.
+    //
+    //     Nếu a = 0 và b <> 0: phương trình vô nghiệm.
+    //
+    //     Nếu a <> 0: phương trình có nghiệm duy nhất x = -b : a.
+</script>
 </body>
 </html>
